@@ -9,7 +9,7 @@ namespace Entity.Concrete
     public class AppUser : IBase, IUserInfo
     {
         private Status _status = Status.Active;
-        public Status status { get { return _status; } set { _status = value; } }
+        public Status Status { get { return _status; } set { _status = value; } }
         public string CreatedBy { get; set; }
         private DateTime _createdDate = DateTime.Now;
         public DateTime CreatedDate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }

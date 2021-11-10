@@ -7,7 +7,7 @@ namespace Core.Entities.Abstract
 {
     public interface IBase
     {
-        Status status { get; set; }
+        Status Status { get; set; }
         string CreatedBy { get; set; }
         DateTime CreatedDate { get; set; }
         string ModifiedBy { get; set; }

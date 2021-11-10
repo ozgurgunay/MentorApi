@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Core.Enums
 {
-    public enum Status
+    public enum AppRoles
     {
-        Active = 1,
-        Modified,
-        Passive
+        Admin = 1,
+        Mentor,
+        Mentee
     }
 }

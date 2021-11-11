@@ -8,22 +8,28 @@ namespace Entity.Concrete
 {
     public class Meeting : IMeetingBase
     {
-        public DateTime? ActualDate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public Guid? NoteID { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string MenteeID { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public Mentee Mentee { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string MentorID { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public Guid MeetingRequestHistoryID { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public MeetingRequestHistory MeetingRequestHistory { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public Guid ExpectedMeetingID { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public ExpectedMeeting ExpectedMeeting { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public Status status { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string CreatedBy { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public DateTime CreatedDate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string ModifiedBy { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public DateTime? ModifiedDate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string DeletedBy { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public DateTime? DeletedDate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public Guid ID { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public Guid ID { get; set; }
+        public DateTime? ActualDate { get; set; }
+        private Status _status = Status.Active;
+        public Status Status { get { return _status; } set { _status = value; } }
+        public Guid? NoteID { get; set; }
+        public string MenteeID { get; set; }
+        public Mentee Mentee { get; set; }
+        public string MentorID { get; set; }
+        public Guid MeetingRequestHistoryID { get; set; }
+        public MeetingRequestHistory MeetingRequestHistory { get; set; }
+        public Guid ExpectedMeetingID { get; set; }
+        public ExpectedMeeting ExpectedMeeting { get; set; }
+        public string CreatedBy { get; set; }
+        private DateTime _createdDate = DateTime.Now;
+        public DateTime CreatedDate {  get { return _createdDate; } set { _createdDate = value; } }
+        public string ModifiedBy { get; set; }
+        public DateTime? ModifiedDate { get; set; }
+        public string DeletedBy { get; set; }
+        public DateTime? DeletedDate { get; set; }
+        public Note Note { get; set; }
+        public Mentor Mentor { get; set; }
+        //edit!
+        Abstract.Mentee IMeetingBase.Mentee { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     }
 }

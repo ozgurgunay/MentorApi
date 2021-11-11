@@ -30,6 +30,7 @@ namespace Entity.Concrete
         public Guid EducationProgramID { get; set; }
         public EducationProgram EducationProgram { get; set; }
         public Guid TemplateID { get; set; }
-
+        public Template Template { get; set; }
+        public Status Status { get; set; }
     }
 }

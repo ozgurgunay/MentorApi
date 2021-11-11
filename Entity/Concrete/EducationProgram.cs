@@ -26,5 +26,6 @@ namespace Entity.Concrete
         public DateTime? ModifiedDate { get; set; }
         public string DeletedBy { get; set; }
         public DateTime? DeletedDate { get; set; }
+        public Status Status { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     }
 }

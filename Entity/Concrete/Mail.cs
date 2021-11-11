@@ -15,7 +15,7 @@ namespace Entity.Concrete
         public string Text { get; set; }
         public string Subject { get; set; }
         private Status _status = Status.Active;
-        public Status status { get { return _status; } set { _status = value; } }
+        public Status Status { get { return _status; } set { _status = value; } }
         public string CreatedBy { get; set; }
         private DateTime _createdDate = DateTime.Now;
         public DateTime CreatedDate { get { return _createdDate; } set { _createdDate = value; } }
@@ -24,5 +24,6 @@ namespace Entity.Concrete
         public string DeletedBy { get; set; }
         public DateTime? DeletedDate { get; set; }
         public MeetingRequestHistory MeetingRequestHistory { get; set; }
+        public MailStatus MailStatus { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     }
 }

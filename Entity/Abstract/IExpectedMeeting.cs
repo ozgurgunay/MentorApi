@@ -1,4 +1,5 @@
 ﻿using Core.Entities.Abstract;
+using Entity.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,8 +12,8 @@ namespace Entity.Abstract
         byte MeetingStartDate { get; set; }
         byte MeetingEndDate { get; set; }
 
-        //Guid TemplateID { get; set; }
-        //Template Template { get; set; }
-        //Meeting Meeting { get; set; }
+        Guid TemplateID { get; set; }
+        Template Template { get; set; }
+        Meeting Meeting { get; set; }
     }
 }

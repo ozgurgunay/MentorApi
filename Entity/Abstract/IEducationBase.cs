@@ -15,7 +15,7 @@ namespace Entity.Abstract
         EducationProgram EducationProgram { get; set; }
 
         Guid TemplateID { get; set; }
-        //template
+        Template Template { get; set; }
 
     }
 }

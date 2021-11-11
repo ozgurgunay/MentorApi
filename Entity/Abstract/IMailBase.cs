@@ -13,7 +13,7 @@ namespace Entity.Abstract
         DateTime Date { get; set; }
         string Text { get; set; }
         string Subject { get; set; }
-        //MailStatus MailStatus { get; set; }
+        MailStatus MailStatus { get; set; }
         MeetingRequestHistory MeetingRequestHistory { get; set; }
     }
 }

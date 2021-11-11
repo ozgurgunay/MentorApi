@@ -11,5 +11,8 @@ namespace Entity.Concrete
         public string Name { get; set; }
         public byte MeetingStartDate { get; set; }
         public byte MeetingEndDate { get; set; }
+        public Guid TemplateID { get; set; }
+        public Template Template { get; set; }
+        public Meeting Meeting { get; set; }
     }
 }

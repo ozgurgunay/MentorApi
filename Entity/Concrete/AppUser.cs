@@ -9,6 +9,7 @@ namespace Entity.Concrete
 {
     public class AppUser : IBase, IUserInfo
     {
+        //jwt den sonra düzenlenebilir?
         private Status _status = Status.Active;
         public Status Status { get { return _status; } set { _status = value; } }
         public string CreatedBy { get; set; }

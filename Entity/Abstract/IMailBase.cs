@@ -1,4 +1,5 @@
 ﻿using Core.Entities.Abstract;
+using Core.Enums;
 using Entity.Concrete;
 using System;
 using System.Collections.Generic;

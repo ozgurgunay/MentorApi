@@ -12,7 +12,7 @@ namespace Entity.Concrete
         public Mentee()
         {
             Questions = new HashSet<Question>();
-           // Meetings = new HashSet<Meeting>();
+            Meetings = new HashSet<Meeting>();
             Suggestions = new HashSet<Suggestion>();
         }
 
@@ -29,8 +29,6 @@ namespace Entity.Concrete
 
         [Display(Name = "Eğitim geçmişi")]
         public string EducationalBackground { get; set; }
-
-
         public string UserID { get; set; }
         public virtual AppUser AppUser { get; set; }
         public string MentorID { get; set; }
@@ -38,11 +36,11 @@ namespace Entity.Concrete
         public Guid? EducationID { get; set; }
 
         [Display(Name = "Eğitim")]
-      //  public virtual Education Education { get; set; }
+        public virtual Education Education { get; set; }
         public virtual ICollection<Question> Questions { get; set; }
-       // public virtual ICollection<Meeting> Meetings { get; set; }
+        public virtual ICollection<Meeting> Meetings { get; set; }
         public virtual ICollection<Suggestion> Suggestions { get; set; }
-       // public virtual MeetingRequestHistory MeetingRequestHistory { get; set; }
+        public virtual MeetingRequestHistory MeetingRequestHistory { get; set; }
 
     }
 }

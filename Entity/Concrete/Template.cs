@@ -11,8 +11,8 @@ namespace Entity.Concrete
     {
         public Template()
         {
-          //  Educations = new HashSet<Education>();
-           // ExpectedMeetings = new HashSet<ExpectedMeeting>();
+           Educations = new HashSet<Education>();
+           ExpectedMeetings = new HashSet<ExpectedMeeting>();
         }
         public Guid ID { get; set; }
 
@@ -37,21 +37,18 @@ namespace Entity.Concrete
             set { _status = value; }
         }
         public string CreatedBy { get; set; }
+
         private DateTime _createdDate = DateTime.Now;
         public DateTime CreatedDate
         {
-            get
-            { return _createdDate; }
+            get { return _createdDate; }
             set { _createdDate = value; }
         }
         public string ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
         public string DeletedBy { get; set; }
         public DateTime? DeletedDate { get; set; }
-        
-
-        
-       // public virtual ICollection<Education> Educations { get; set; }
-       // public virtual ICollection<ExpectedMeeting> ExpectedMeetings { get; set; }
+        public virtual ICollection<Education> Educations { get; set; }
+        public virtual ICollection<ExpectedMeeting> ExpectedMeetings { get; set; }
     }
 }

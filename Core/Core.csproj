@@ -5,7 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DataAccess\Concrete\" />
+    <Compile Remove="DataAccess\Concrete\**" />
+    <EmbeddedResource Remove="DataAccess\Concrete\**" />
+    <None Remove="DataAccess\Concrete\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataAccess\Abstract\" />
   </ItemGroup>
 
 </Project>

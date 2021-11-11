@@ -13,9 +13,10 @@ namespace Entity.Abstract
         EducationSchedules EducationSchedules { get; set; }
         Guid EducationProgramID { get; set; }
         EducationProgram EducationProgram { get; set; }
-
         Guid TemplateID { get; set; }
         Template Template { get; set; }
+        ICollection<Mentee> Mentees { get; set; }
+        ICollection<Mentor> Mentors { get; set; }
 
     }
 }

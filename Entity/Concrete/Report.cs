@@ -8,14 +8,12 @@ namespace Entity.Concrete
     public class Report : IReportBase
     {
         public Guid ID { get; set; }
-
         public Status Status { get; set; }
 
         private DateTime _createdDate = DateTime.Now;
         public DateTime CreatedDate
         {
-            get
-            { return _createdDate; }
+            get { return _createdDate; }
             set { _createdDate = value; }
         }
 

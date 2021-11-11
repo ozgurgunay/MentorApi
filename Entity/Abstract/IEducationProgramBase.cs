@@ -1,4 +1,5 @@
 ﻿using Core.Entities.Abstract;
+using Entity.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,6 +11,6 @@ namespace Entity.Abstract
         string Name { get; set; }
         string Location { get; set; }
         string Description { get; set; }
-
+        ICollection<Education> Educations { get; set; }
     }
 }

@@ -11,7 +11,6 @@ namespace Entity.Abstract
         string Name { get; set; }
         byte MeetingStartDate { get; set; }
         byte MeetingEndDate { get; set; }
-
         Guid TemplateID { get; set; }
         Template Template { get; set; }
         Meeting Meeting { get; set; }

@@ -24,15 +24,13 @@ namespace Entity.Concrete
         private DateTime _createdDate = DateTime.Now;
         public DateTime CreatedDate
         {
-            get
-            { return _createdDate; }
+            get { return _createdDate; }
             set { _createdDate = value; }
         }
         public string ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
         public string DeletedBy { get; set; }
         public DateTime? DeletedDate { get; set; }
-
         public string MenteeID { get; set; }
         public virtual Mentee Mentee { get; set; }
         public string MentorID { get; set; }

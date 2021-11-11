@@ -11,7 +11,7 @@ namespace Entity.Concrete
         public Mentor()
         {
             Mentees = new HashSet<Mentee>();
-          //  Meetings = new HashSet<Meeting>();
+            Meetings = new HashSet<Meeting>();
             Suggestions = new HashSet<Suggestion>();
             Questions = new HashSet<Question>();
         }
@@ -25,16 +25,14 @@ namespace Entity.Concrete
         [Display(Name = "Uzmanlık Alanları")]
         public string Professions { get; set; }
         public short MaxMenteeNumber { get; set; }
-
-
         public string UserID { get; set; }
         public virtual AppUser AppUser { get; set; }
         public Guid? EducationID { get; set; }
-       // public virtual Education Education { get; set; }
+        public virtual Education Education { get; set; }
         public virtual ICollection<Mentee> Mentees { get; set; }
-       // public virtual ICollection<Meeting> Meetings { get; set; }
+        public virtual ICollection<Meeting> Meetings { get; set; }
         public virtual ICollection<Suggestion> Suggestions { get; set; }
         public virtual ICollection<Question> Questions { get; set; }
-       // public virtual MeetingRequestHistory MeetingRequestHistory { get; set; }
+        public virtual MeetingRequestHistory MeetingRequestHistory { get; set; }
     }
 }

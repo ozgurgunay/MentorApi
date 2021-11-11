@@ -2,6 +2,7 @@
 using Core.Enums;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Entity.Concrete
@@ -19,10 +20,15 @@ namespace Entity.Concrete
         public string DeletedBy { get; set; }
         public DateTime? DeletedDate { get; set; }
         public AppRoles AppRoles { get; set; }
-        public string Name { get; set; }
-        public string Surname { get; set; }
 
-        public Admin Admin { get; set; }
+        [Display(Name = "Ad")]
+        public string Name { get; set; }
+
+        [Display(Name = "Soyad")]
+        public string Surname { get; set; }
+        public virtual Admin Admin { get; set; }
+        public virtual Mentor Mentor { get; set; }
+        public virtual Mentee Mentee { get; set; }
 
     }
 }

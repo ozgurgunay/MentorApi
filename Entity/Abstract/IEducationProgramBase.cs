@@ -14,3 +14,4 @@ namespace Entity.Abstract
         ICollection<Education> Educations { get; set; }
     }
 }
+

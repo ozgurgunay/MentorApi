@@ -2,8 +2,6 @@
 using Core.Enums;
 using Entity.Concrete;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Entity.Abstract
 {

@@ -1,9 +1,6 @@
-﻿using Core.Entities.Abstract;
-using Core.Enums;
+﻿using Core.Enums;
 using Entity.Abstract;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Entity.Concrete
 {

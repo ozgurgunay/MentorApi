@@ -1,5 +1,4 @@
 ﻿using Core.Entities.Abstract;
-using Entity.Concrete;
 using System;
 
 namespace Entity.Abstract

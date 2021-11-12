@@ -3,7 +3,6 @@ using Entity.Abstract;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 
 namespace Entity.Concrete
 {

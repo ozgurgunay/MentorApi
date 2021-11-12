@@ -1,6 +1,4 @@
 ﻿using Core.Entities.Abstract;
-using Entity.Concrete;
-using System.Collections.Generic;
 
 namespace Entity.Abstract
 {

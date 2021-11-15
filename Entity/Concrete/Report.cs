@@ -1,6 +1,5 @@
 ﻿using Core.Enums;
 using Entity.Abstract;
-using Entity.Concrete;
 using System;
 
 namespace Entity.Concrete
